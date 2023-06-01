@@ -8,17 +8,23 @@ body {
 }
 
 span[class~="sr-only"] {
-    border: 0;
-    clip: rect(1px, 1px, 1px, 1px);         /* The CSS clip property is used to define the visible portions of an element. */
-    clip-path: inset(50%);                  /* The clip-path property determines the shape the clip property should take. Setting the clip-path property to the value of inset(50%), forms the clip-path into a rectangle within the element. */
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    white-space: nowrap;
-    position: absolute;
-    padding: 0;
-    margin: -1px;  
+    border: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;         /* The CSS clip property is used to define the visible portions of an element. */
+    clip-path: inset(50%) !important;                  /* The clip-path property determines the shape the clip property should take. Setting the clip-path property to the value of inset(50%), forms the clip-path into a rectangle within the element. */
+    width: 1px !important;
+    height: 1px !important;
+    overflow: hidden !important;
+    white-space: nowrap !important;
+    position: absolute !important;
+    padding: 0 !important;
+    margin: -1px !important;  
 }
+
+/*
+    
+    Use "!important" keyword to ensure that properties are always applied, regardless of order or specificity.
+
+*/
 
 h1 {
     max-width: 37.25rem;
@@ -68,7 +74,7 @@ section {
     padding: 0 0.75rem 1.5rem 0.75rem;
 }
 
-span:not(.sr-only) {
+span {
     font-weight: normal;
 }
 
