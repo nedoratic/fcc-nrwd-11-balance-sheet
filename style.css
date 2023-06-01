@@ -9,5 +9,7 @@ body {
 
 span[class~="sr-only"] {
     border: 0;
+    clip: rect(1px, 1px, 1px, 1px);         /* The CSS clip property is used to define the visible portions of an element. */
+    clip-path: inset(50%);               /* The clip-path property determines the shape the clip property should take. Setting the clip-path property to the value of inset(50%), forms the clip-path into a rectangle within the element. */
 }
 
