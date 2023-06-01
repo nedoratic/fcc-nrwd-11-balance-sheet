@@ -58,3 +58,9 @@ section {
     z-index: 999;
 }
 
+#years span[class] {                                    /* The span[class] syntax will target any span element that has a class attribute set, regardless of the attribute's value. */
+    font-weight: bold;
+    text-align: right;
+    width: 4.5rem;
+}
+
